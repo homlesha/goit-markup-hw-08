@@ -40,6 +40,9 @@
   @media screen and (min-width: $desktop) {
     margin: 0;
   }
+  @media screen and (max-width: $mobile) {
+    margin-left: 10px;
+  }
 
 }
 
