@@ -728,6 +728,7 @@ body.overflow {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-mob.jpg");
     max-width: 480px;
     background-size: cover;
+    padding: 118px 0;
   }
 }
 @media screen and (min-width: 480px) {
@@ -735,6 +736,7 @@ body.overflow {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-mob.jpg");
     max-width: 480px;
     background-size: cover;
+    padding: 118px 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -747,6 +749,7 @@ body.overflow {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-desk.jpg");
     max-width: 1600px;
+    padding: 200px 0;
   }
 }
 
@@ -773,8 +776,13 @@ body.overflow {
 }
 
 section.about {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 0px;
+}
+@media screen and (max-width: 1200px) {
+  section.about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -798,12 +806,6 @@ section.about {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .about__item + .about__item {
-    margin-left: 30px;
-  }
-}
-
 .about__icon {
   display: flex;
   align-items: center;
@@ -813,7 +815,6 @@ section.about {
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .about__icon {
-    margin-top: 30px;
     height: 120px;
     width: 450px;
   }
@@ -851,6 +852,11 @@ section.about {
   font-size: 14px;
   line-height: 1.7;
   color: var(--main-color-text);
+}
+@media screen and (max-width: 768px) {
+  .about__text {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -890,7 +896,18 @@ section.about {
 
 .team {
   background-color: #F5F4FA;
-  padding: 94px 0;
+}
+@media screen and (max-width: 1200px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .team__titel {
+    font-size: 28px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -964,9 +981,16 @@ section.about {
 .clients__titel {
   font-size: 28px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .clients__titel {
     font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -1185,11 +1209,17 @@ section.about {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+@media screen and (max-width: 1200px) {
+  .portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 
 .portfolio__list {
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
   flex-wrap: wrap;
   max-width: 326px;
 }
@@ -1241,7 +1271,8 @@ section.about {
   box-sizing: border-box;
   border: 1px solid #eeeeee;
   flex-basis: calc(100% - 30px);
-  height: 450px;
+  height: 404px;
+  width: 450px;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1249,11 +1280,15 @@ section.about {
 @media screen and (min-width: 768px) {
   .block {
     flex-basis: calc((100% - 60px) / 2);
+    width: 354px;
+    height: 440px;
   }
 }
 @media screen and (min-width: 1200px) {
   .block {
     flex-basis: calc((100% - 90px) / 3);
+    width: 370px;
+    height: 404px;
   }
 }
 .block:hover, .block:focus {
@@ -1264,6 +1299,10 @@ section.about {
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
+}
+
+.test__img {
+  width: 100%;
 }
 
 .box__text {

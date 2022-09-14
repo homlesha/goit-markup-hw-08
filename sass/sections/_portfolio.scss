@@ -5,12 +5,17 @@
     letter-spacing: 0.03em;
     padding-top: 94px;
     padding-bottom: 94px;
+
+    @media screen and (max-width: $desktop) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
   }
   
   .portfolio__list {
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
     flex-wrap: wrap;
     max-width: 326px;
 
@@ -60,8 +65,6 @@
     gap: 30px;
   }
   
-
-
   .project__item:hover .project__text {
     transform: translateY(0%);
   }
@@ -71,15 +74,21 @@
     box-sizing: border-box;
     border: 1px solid #eeeeee;
     flex-basis: calc(100% - 30px);
+    height: 404px;
+    width: 450px;
 
     @media screen and (min-width: $tablet) {
       flex-basis: calc((100% - 2 * 30px) / 2);
+      width: 354px;
+      height: 440px;
     }
 
     @media screen and (min-width: $desktop) {
       flex-basis: calc((100% - 3 * 30px) / 3);
+      width: 370px;
+      height: 404px;
     }
-    height: 450px;
+    
 
     transition-property: box-shadow;
     transition-duration: 250ms;
@@ -98,6 +107,10 @@
     box-sizing: border-box;
   }
   
+  .test__img {
+    width: 100%;
+  }
+
   .box__text {
     position: absolute;
     left: 0;

@@ -1,10 +1,18 @@
 .team {
     background-color: #F5F4FA;
-    padding: 94px 0;
+
+    @media screen and (max-width: $desktop) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
   }
 
   .team__titel {
-    @extend %titel
+    @extend %titel;
+
+    @media screen and (max-width: $desktop) {
+      font-size: 28px;
+    }
   }
 
   .team__list {

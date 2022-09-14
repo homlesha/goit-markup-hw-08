@@ -1,6 +1,10 @@
 section.about {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 0px;
+
+    @media screen and (max-width: $desktop) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
   }
 
   // perenesti vo vse ul 
@@ -25,12 +29,6 @@ section.about {
       margin: 15px;
     }
   }
-
-  .about__item + .about__item {
-    @media screen and (min-width: $desktop) {
-      margin-left: 30px;
-    }
-  }
   
   .about__icon {
     display: flex;
@@ -38,7 +36,6 @@ section.about {
     justify-content: center;
 
     @media screen and (min-width: $mobile) and (max-width: $tablet) {
-      margin-top: 30px;
       height: 120px;
       width: 450px;
     }
@@ -72,7 +69,12 @@ section.about {
   }
   
   .about__text {
+   
     font-size: 14px;
     line-height: 1.7;
     color: var(--main-color-text);
+
+    @media screen and (max-width: $tablet) {
+      margin-bottom: 30px;
+    }
   }
