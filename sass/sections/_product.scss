@@ -1,0 +1,38 @@
+.product {
+  @media screen and (max-width: $desktop) {
+    display: none;
+  }
+}
+
+.product__titel {
+  @extend %titel
+}
+
+.product__list {
+  display: flex;
+  column-gap: 30px;
+}
+
+.product__item {
+  position: relative;
+  color: var(--main-background-color);
+  }
+  
+.product__side {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 27px 0;
+  width: 100%;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.side__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--text-dark-background);
+}

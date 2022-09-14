@@ -1,0 +1,83 @@
+.clients__titel {
+  @extend %titel;
+  font-size: 28px;
+  @media screen and (min-width: $tablet) {
+    font-size: 36px;
+  }
+}
+
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  // margin-left: 15px;
+
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 0;
+  }
+}
+
+.clients__item {
+  flex-basis: calc((100% - 4 * 15px) / 2);
+
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc((100% - 6 * 15px) / 3);
+  }
+  @media screen and (min-width: $desktop) {
+    margin: 0;
+  }
+
+}
+
+.clients__link {
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--link-color);
+    border-radius: 4px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    @media screen and (min-width: $mobile) {
+      width: 210px;
+      height: 92px;
+    }
+  
+    @media screen and (min-width: $tablet) {
+      max-width: 226px;
+      max-height: 92px;
+    }
+  
+    @media screen and (min-width: $desktop) {
+      max-width: 170px;
+      max-height: 92px;
+    }
+
+
+
+    &:hover {
+      border: 1px solid var(--accent-color);
+    }
+
+    &:hover .clients__icon,
+    &:focus .clients__icon {
+      fill: var(--accent-color);
+    }
+  }
+  
+  .clients__icon {
+    fill: var(--link-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }

@@ -1,0 +1,27 @@
+@import './utils/mixins';
+@import './utils/var';
+@import './utils/base';
+
+
+
+@import "./components/buttons.scss";
+@import './components/logo';
+@import "./components/titel.scss";
+@import './components/socialTeam';
+@import './components/social';
+@import './components/modal';
+
+
+
+@import './sections/mobille-header';
+@import './sections/header';
+@import './sections/hero';
+@import './sections/about';
+@import './sections/product';
+@import './sections/team';
+@import './sections/clients';
+@import './sections/footer';
+
+@import './sections/portfolio'
+
+
