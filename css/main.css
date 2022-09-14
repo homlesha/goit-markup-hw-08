@@ -282,6 +282,12 @@ body {
     height: 609px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
 
 .button__close {
   position: absolute;
@@ -316,6 +322,11 @@ body {
   margin-bottom: 12px;
   letter-spacing: 0.03em;
   color: var(--black-color);
+}
+@media screen and (max-width: 1200px) {
+  .modal__titel {
+    text-align: center;
+  }
 }
 
 .modal__form {
@@ -411,6 +422,11 @@ body {
   border-radius: 3px;
   margin-right: 9px;
 }
+@media screen and (min-width: 1200px) {
+  .modal__square {
+    margin-left: 12px;
+  }
+}
 
 .modal__checkbox {
   outline: transparent;
@@ -436,6 +452,11 @@ body {
     font-size: 5px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .modal__bottom-text {
+    font-size: 14px;
+  }
+}
 
 .checkbox__link {
   margin-left: 5px;
@@ -446,6 +467,11 @@ body {
 @media screen and (max-width: 480px) {
   .checkbox__link {
     font-size: 5px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .checkbox__link {
+    font-size: 14px;
   }
 }
 
