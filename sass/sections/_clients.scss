@@ -4,6 +4,9 @@
   @media screen and (min-width: $desktop) {
     font-size: 36px;
   }
+  @media screen and (max-width: $desktop) {
+    margin-bottom: 30px;
+  }
 }
 
 .clients {
@@ -40,7 +43,7 @@
   @media screen and (min-width: $desktop) {
     margin: 0;
   }
-  @media screen and (max-width: $mobile) {
+  @media screen and (max-width: 479px) {
     margin-left: 10px;
   }
 
@@ -63,13 +66,13 @@
     }
   
     @media screen and (min-width: $tablet) {
-      max-width: 226px;
-      max-height: 92px;
+      width: 226px;
+      height: 92px;
     }
   
     @media screen and (min-width: $desktop) {
-      max-width: 170px;
-      max-height: 92px;
+      width: 170px;
+      height: 92px;
     }
 
 

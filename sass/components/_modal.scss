@@ -8,6 +8,7 @@
     background-color: rgba(0, 0, 0, 0.2);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 3;
   }
 
   .background.is-hidden {
@@ -33,7 +34,7 @@
     border-radius: 4px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 3;
+    z-index: 4;
 
     @media screen and (max-width: $mobile) {
       width: 90%;  
